@@ -116,7 +116,6 @@ int main(int argc, char *argv[]){
 	char *s = malloc(128);
 	fgets(s, 128, stdin);
 	remove_spaces(s);
-	printf("%s\n", s);
 	strcat(s, "<");
 	int size = 0;
 	mobj* ms = tokenizer(s, &size);
